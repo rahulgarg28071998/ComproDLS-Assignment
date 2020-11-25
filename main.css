@@ -1,0 +1,22 @@
+.header{
+    background-color: aqua;
+    height: 40px;
+    width:100%;
+    padding:10px;
+    float:left;
+    border:5px solid black;
+}
+.navbar{
+    position: fixed ;
+    top:0;
+    left:0;
+    height: auto;
+    width: 100vw;
+    background: transparent;
+}
+.container{
+    background-color: black;
+    height: 650px;
+    width:100%;
+    background:url("img/Website-background.png") no-repeat center center/cover ;
+}
