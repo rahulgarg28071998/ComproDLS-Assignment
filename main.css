@@ -8,7 +8,7 @@
 } */
 .navbar{
     position: fixed ;
-    top:0;
+    top:10px;
     left:0;
     height: auto;
     padding:0 0 10px 0;
@@ -16,7 +16,9 @@
     background: transparent;
     border: 0px;
 }
-
+.navbar-toggle{
+    margin: 5px 80px 0 0;
+}
 .navbar .navbar-nav li a {
     color: white;    
     font-weight:bold;
@@ -29,6 +31,8 @@
     background:url("img/Website-background.png") no-repeat center center/cover ;
 }
 
-.navbar .navbar-nav li .active{
-    border-radius: 50%;
+.navbar .navbar-nav  .active a {
+    /* background-color: red; */
+    border-radius: 10%;
+    margin: 5px;
 }
