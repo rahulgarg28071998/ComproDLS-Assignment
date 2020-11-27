@@ -1,0 +1,74 @@
+body{
+    background-color:white;
+    font-family: "Open Sans",sans-serif;
+}
+.navbar{
+    min-height: 70px;
+    padding:0 8%;
+    margin: 0;
+}
+.navbar-header
+{
+    height: 70px;
+    width: auto;
+    padding: 0;
+}
+.navbar-nav{
+    left:20%;
+    position: absolute;
+    margin: 10px 0 0 0; 
+}
+.navbar .navbar-nav a:link{
+    padding:8px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+
+}
+
+.navbar .navbar-nav a:hover{
+  
+    color: #0288d1;
+    /* margin: ; */
+    /* background-color: royalblue; */
+}
+.navbar .navbar-nav li{
+    padding: 2px 8px 2px 0px;
+    position: relative;
+    display: block;
+}
+.navbar .navbar-nav ul{
+
+position: relative;
+    display: block;
+}
+.navbar .navbar-nav  .active a {
+    background-color:#0288d1;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.main-container{
+    background-color: chartreuse;
+
+}
+.intro-container{
+    background-color: blue;
+    height: 650px;
+    margin: 40px 9% 0 ;
+    padding: 0 15px;
+}
+.intro{
+    
+   
+    background-color:whitesmoke;
+    text-align: center;
+    
+}
+
+.intro h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
