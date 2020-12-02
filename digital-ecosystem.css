@@ -40,8 +40,8 @@ body{
 }
 .navbar .navbar-nav li{
     padding: 2px 8px 2px 0px;
-    position: relative;
-    display: block;
+    /* position: relative;
+    display: block; */
 }
 .navbar .navbar-nav ul{
 
@@ -209,24 +209,3 @@ text-align: left;
     color: #0288d1;
     padding: 0 1px;
 } */
-
-
-.photo-gallery.row .g-element .photo {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.g-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #fff;
-    padding: 60px 10px 40px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.6);
-    opacity: 0;
-    transition: all .3s;
-}
