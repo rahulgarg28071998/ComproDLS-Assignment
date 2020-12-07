@@ -8,10 +8,55 @@ body{
     text-align: center;
     line-height: 1.5;
 }
+
+
+  /* .navbar .navbar-nav a .tooltiptext {
+    visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+ 
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 12;
+  }
+  
+  .navbar .navbar-nav a:hover .tooltiptext {
+    visibility: visible;
+  }
+   */
+
+.navbar .navbar-nav a .coupontooltip {
+    display: block;
+    visibility: hidden;
+}
+
+.navbar .navbar-nav a:hover .coupontooltip{
+    position: absolute;
+    visibility:visible;
+    display: none;
+    background: #ffffcc;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    z-index: 1000;
+}
+
+
 .navbar{
     min-height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding:0 8%;
     margin: 0;
+    z-index: 10;
 }
 .navbar-header
 {
@@ -24,6 +69,13 @@ body{
     position: absolute;
     margin: 10px 0 0 0; 
 }
+
+.navbar .navbar-nav  .active a {
+    background-color:#0288d1;
+    border-radius: 4px;
+    color: white;
+}
+
 .navbar .navbar-nav a:link{
     padding:8px 10px;
     font-weight: 600;
@@ -31,12 +83,8 @@ body{
     color: black;
 
 }
-.navbar-nav li:hover {
-  
-    color: #0288d1;
-    
-    /* margin: ; */
-    background-color: royalblue;
+.navbar-nav li a:hover {
+    color: #008ed6;
 }
 .navbar .navbar-nav li{
     padding: 2px 8px 2px 0px;
@@ -48,18 +96,13 @@ body{
 position: relative;
     display: block;
 }
-.navbar .navbar-nav  .active a {
-    background-color:#0288d1;
-    border-radius: 4px;
-    color: white;
-}
+
 
 /* main */
 
 .intro-container{
-    background-color:white;
     height: auto;
-    margin: 40px 9% 0 ;
+    margin: 140px 9% 0 ;
     padding: 0 15px 40px;
 }
 .intro{
@@ -183,7 +226,7 @@ text-align: left;
 }
 .product-footer{
     /* margin-top: 20px; */
-    border: solid 1px #ccc;
+    border: solid 1px #cccccc;
     border-radius: 4px;
     background-color: #f2f2f2;
     margin-bottom: 20px;

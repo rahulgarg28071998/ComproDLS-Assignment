@@ -12,9 +12,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
     <!-- navigation bar start -->
-    <nav class="navbar  navbar-default " >
+    <nav class="navbar  navbar-default" >
         <div class="container-fluid">
           <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,7 +29,7 @@
           <ul class="nav navbar-nav  collapse navbar-collapse" style="color: white;">
             <li ><a href="#">Home</a></li>
             <li class="active"><a href="#">Digital Ecosystem</a></li>
-            <li><a href="#">Engage</a></li>
+            <li><a href="#">Engage<span class="coupontooltip">Engage</span></a></li>
             <li><a href="#">Leonardo</a></li>
             <li><a href="#">Webinars</a></li>
             <li><a href="#">Customers</a></li>
@@ -63,7 +65,8 @@
                 <p class="description">
                     comproDLS™ enables solutions for a wide range of learning experiences & capabilities which can be leveraged all together or one at-a-time to create innovative learning solutions via the following independent product offerings:
                 </p>
-                <div>
+            </div>    
+            <div>
                  <div class="col-6 col-md-3" >
                      <div class="product-intro">
                          <div class="widget-top-overflow text-white">
@@ -171,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
 
 
@@ -379,6 +382,25 @@
             </div>
         </section>
     </div>
+<script>
+    function showTooltip(e) {
+        var tooltip = e.target.classList.contains("coupontooltip")
+            ? e.target
+            : e.target.querySelector(":scope .coupontooltip");
+        tooltip.style.left =
+            (e.pageX + tooltip.clientWidth + 10 < document.body.clientWidth)
+                ? (e.pageX + 10 + "px")
+                : (document.body.clientWidth + 5 - tooltip.clientWidth + "px");
+        tooltip.style.top =
+            (e.pageY + tooltip.clientHeight + 10 < document.body.clientHeight)
+                ? (e.pageY + 10 + "px")
+                : (document.body.clientHeight + 5 - tooltip.clientHeight + "px");
+        }
 
+        var tooltips = document.querySelectorAll('.couponcode');
+        for(var i = 0; i < tooltips.length; i++) {
+        tooltips[i].addEventListener('mousemove', showTooltip);
+        }
+</script>
 </body>
 </html>
