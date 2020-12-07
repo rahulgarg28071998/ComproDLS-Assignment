@@ -1,6 +1,6 @@
 body{
     background-color:white;
-    font-family: "Open Sans",sans-serif;
+    font-family: 'Open Sans',Helvetica Neue,Sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
@@ -26,17 +26,17 @@ body{
 }
 .navbar .navbar-nav a:link{
     padding:8px 10px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     color: black;
 
 }
-
-.navbar .navbar-nav a:hover{
+.navbar-nav li:hover {
   
     color: #0288d1;
+    
     /* margin: ; */
-    /* background-color: royalblue; */
+    background-color: royalblue;
 }
 .navbar .navbar-nav li{
     padding: 2px 8px 2px 0px;
@@ -196,16 +196,21 @@ padding: 10px 20px;
 margin: 0;
 text-align: left;
 }
-
-/* .icon-list li:before {
-    content: "\f10c";
+.icon-list li {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+.icon-list  li:before {
+	content: "\f10c";
     font-family: "FontAwesome";
     display: inline-block;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: -25px;
-    top: 9px;
     color: #0288d1;
-    padding: 0 1px;
-} */
+    position: absolute;
+    left: -5px;
+	height: 20px;
+    width: 20px;
+    top: 9px;   
+    padding: 0 1px; 
+}
