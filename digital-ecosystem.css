@@ -1,51 +1,12 @@
 body{
     background-color:white;
-    font-family: 'Open Sans',Helvetica Neue,Sans-serif;
+    font-family: 'Open Sans',Sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
     color: #313131;
     text-align: center;
     line-height: 1.5;
-}
-
-
-  /* .navbar .navbar-nav a .tooltiptext {
-    visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
- 
-  width: 120px;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-  z-index: 12;
-  }
-  
-  .navbar .navbar-nav a:hover .tooltiptext {
-    visibility: visible;
-  }
-   */
-
-.navbar .navbar-nav a .coupontooltip {
-    display: block;
-    visibility: hidden;
-}
-
-.navbar .navbar-nav a:hover .coupontooltip{
-    position: absolute;
-    visibility:visible;
-    display: none;
-    background: #ffffcc;
-    border: 1px solid black;
-    color: black;
-    padding: 5px;
-    z-index: 1000;
 }
 
 
@@ -58,6 +19,11 @@ body{
     margin: 0;
     z-index: 10;
 }
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+  
 .navbar-header
 {
     height: 70px;
