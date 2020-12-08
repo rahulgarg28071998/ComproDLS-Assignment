@@ -12,16 +12,19 @@ body{
 
 .navbar{
     min-height: 70px;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     padding:0 8%;
     margin: 0;
     z-index: 10;
+    background-color: transparent;
+    border: transparent;
 }
 .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
+    background-color: #eee !important;
+    border: thin;
+    transition: background-color border 200ms linear;
   }
   
 .navbar-header
@@ -39,7 +42,7 @@ body{
 .navbar .navbar-nav  .active a {
     background-color:#0288d1;
     border-radius: 4px;
-    color: white;
+    color:  #fff ;
 }
 
 .navbar .navbar-nav a:link{
